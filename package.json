@@ -5,7 +5,7 @@
     "test": "echo \"Error: no test specified\" && exit 1 ",
     "ts": "typings install"
   },
-  "author": "Mauricio T.",
+  "author": "Mauricio Torrejon",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.9.3",
