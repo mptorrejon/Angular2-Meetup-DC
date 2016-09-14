@@ -9,19 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent2 = (function () {
-    function AppComponent2() {
+var RightComponent = (function () {
+    function RightComponent() {
         this.version = 0;
-        this.version = 3;
+        this.version = 2;
     }
-    AppComponent2 = __decorate([
+    RightComponent = __decorate([
         core_1.Component({
-            selector: 'my-app2',
-            template: "<h3>My First Angular \n  \t\t\t\t<span class=\"version\">{{version}}</span> \n  \t\t\t\tApp\n  \t\t\t</h3>",
-            styles: ["\n  \t.version{ color:blue; }\n  "]
+            selector: 'right-component',
+            template: "<h3 class=\"text\">Right Component</h3>",
+            styles: ["\n  \t.text{ color:blue; }\n  "]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent2);
-    return AppComponent2;
+    ], RightComponent);
+    return RightComponent;
 }());
-exports.AppComponent2 = AppComponent2;
+exports.RightComponent = RightComponent;

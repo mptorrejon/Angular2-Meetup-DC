@@ -27,10 +27,10 @@ gulp.task('serve', ['compile-ts'/*, 'compile-sass'*/], function(){
 	browserSync({
 		port: 3010,
 		files: [ 
-			'index.html',
-			'dist/**/*.js',
-			'assets/templates/**/*.html',
-			'assets/styles/sass/**/*.scss' 
+			'index.html'
+			,'dist/**/*.js'
+			//,'assets/templates/**/*.html'
+			//,'assets/styles/sass/**/*.scss'
 		],
 		injectChanges: true,
 		logFileChanges: false,

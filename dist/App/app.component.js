@@ -9,19 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent1 = (function () {
-    function AppComponent1() {
+var AppComponent = (function () {
+    function AppComponent() {
         this.version = 0;
-        this.version = 3;
+        this.version = 2;
     }
-    AppComponent1 = __decorate([
+    AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n  \t\t\t\t<h3>My First Angular <span class=\"version\">{{version}}</span> App</h3>\n  \t\t\t\t<my-app2>Loading...</my-app2>\n\n  \t\t\t\t<button (click)=\"hasChild = !hasChild\">{{hasChild ? 'Destroy' : 'Create'}} MyComponent</button>\n    \t\t\t\n  \t\t\t\t<life-cycle *ngIf=\"hasChild\"></life-cycle>\n\n  \t\t\t\t<wikipedia></wikipedia>\n\n  \t\t\t\t<router-outlet></router-outlet>\n  \t\t\t",
-            styles: ["\n  \t.version{ color:red; }\n  "]
+            template: "\n\t\t<h3>My First Angular <span class=\"version\">{{version}}</span> App</h3>\n\n\t\t<!--UNCOMMENT AS NEEDED-->\t\t\n\t\t\n\t\t<!--<left-component which=\"left\"></left-component> | -->\n\t\t<!-- <right-component which=\"right\"></right-component> -->\n\n\t\t<!-- <button (click)=\"hasChild = !hasChild\">{{hasChild ? 'Destroy' : 'Create'}} MyComponent</button> -->\n\t\n\t\t<!-- <life-cycle *ngIf=\"hasChild\"></life-cycle> -->\n\n\t\t<!-- <wikipedia></wikipedia> -->\n\t",
+            styles: ["\n\t\tbutton{display:block; margin: 10px 0px; padding: 10px 5px;}\n\t"]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent1);
-    return AppComponent1;
+    ], AppComponent);
+    return AppComponent;
 }());
-exports.AppComponent1 = AppComponent1;
+exports.AppComponent = AppComponent;

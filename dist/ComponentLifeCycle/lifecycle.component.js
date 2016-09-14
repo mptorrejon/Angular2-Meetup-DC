@@ -18,9 +18,6 @@ var LifeCycleExamples = (function () {
         this.logs = [];
         this.name = "Mauricio";
         console.log("Name has been set.");
-        // this.changeName.subscribe((newName)=>{
-        // 	this.name = newName;
-        // })
         console.log(this.viewchild); //undefined because child has not been intialized YET!
     }
     //gets called on component initialization
@@ -76,7 +73,10 @@ var LifeCycleExamples = (function () {
         core_1.Component({
             selector: 'life-cycle',
             directives: [child_component_1.ChildComponent],
-            template: "\n\t\t<div>\n\t\t\t<label>Name: </label>{{name}}\n\t\t</div>\n\t\t<button  (click)=\"fullName()\">Full Name</button>\n\t\t<child-component [objValues]=\"name\" ></child-component>\n\t"
+            template: "\n\t\t<label>Name: </label>{{name}}\n\t\t<button (click)=\"fullName()\">Full Name</button>\n\t\t<child-component [objValues]=\"name\" ></child-component>\n\t",
+            styles: [
+                "\n\t\t\tlabel{color:green;}\n\t\t\tbutton{margin:10px 0px;}\n\t\t"
+            ]
         }), 
         __metadata('design:paramtypes', [core_1.ElementRef])
     ], LifeCycleExamples);

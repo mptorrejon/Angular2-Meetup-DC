@@ -1,8 +1,10 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
 
-import { AppComponent1 as App1 }   from './app.component';
-import { AppComponent2 as App2 }   from './app2.component';
+import { RightComponent as Right }   from './right.component';
+import { LeftComponent as Left} from './left.component';
+
 import { LifeCycleExamples } from '../ComponentLifeCycle/lifecycle.component';
 import { Wikipedia } from '../RxJS/rxjs.component';
 import { WikipediaService } from '../RxJS/rxjs.service';
@@ -12,8 +14,8 @@ import { HttpModule, JsonpModule }  from '@angular/http';
 
 @NgModule({
   imports:      [ BrowserModule, HttpModule, JsonpModule ],
-  declarations: [ App1, App2, LifeCycleExamples, Wikipedia ],
+  declarations: [ Right, Left, LifeCycleExamples, Wikipedia ],
   providers: [ WikipediaService, Http ],
-  bootstrap:    [ App1 ]
+  bootstrap:    [ AppComponent ]
 })
 export class AppModule {}

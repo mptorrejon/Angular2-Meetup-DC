@@ -1,14 +1,15 @@
 import {Component, Input} from '@angular/core';
 
 @Component({
-	selector: 'child-component',
-	template: 	`
-					<div>
-						<h2>Child Component</h2>
-						<label>Old Value:</label> {{oldVal}} |
-						<label>New Value:</label> {{currVal}}
-					</div>
-				`
+	selector: 'child-component'
+	,template: 	`
+		<h2>Child Component</h2>
+		<label>Old Value:</label> {{oldVal}} |
+		<label>New Value:</label> {{currVal}}
+	`
+	,styles: [`
+		label{ color:red;}
+	`]
 })export class ChildComponent{
 	@Input() objValues;
 	oldVal:string ="";

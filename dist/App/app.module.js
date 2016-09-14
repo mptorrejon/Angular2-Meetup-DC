@@ -11,7 +11,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
-var app2_component_1 = require('./app2.component');
+var right_component_1 = require('./right.component');
+var left_component_1 = require('./left.component');
 var lifecycle_component_1 = require('../ComponentLifeCycle/lifecycle.component');
 var rxjs_component_1 = require('../RxJS/rxjs.component');
 var rxjs_service_1 = require('../RxJS/rxjs.service');
@@ -23,9 +24,9 @@ var AppModule = (function () {
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, http_2.HttpModule, http_2.JsonpModule],
-            declarations: [app_component_1.AppComponent1, app2_component_1.AppComponent2, lifecycle_component_1.LifeCycleExamples, rxjs_component_1.Wikipedia],
+            declarations: [right_component_1.RightComponent, left_component_1.LeftComponent, lifecycle_component_1.LifeCycleExamples, rxjs_component_1.Wikipedia],
             providers: [rxjs_service_1.WikipediaService, http_1.Http],
-            bootstrap: [app_component_1.AppComponent1]
+            bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);

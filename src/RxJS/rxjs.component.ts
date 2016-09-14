@@ -5,7 +5,7 @@ import { WikipediaService } from './rxjs.service';
 @Component({
 	selector: 'wikipedia',
 	template: `
-		<h2>Wikipedia Search</h2>
+		<h2>Wikipedia Search using RxJS</h2>
 		<input #input type="text" (keyup)="Search(input.value)" />
 		<ul>
 			<li *ngFor="let item of items">{{item}}</li>

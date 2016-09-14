@@ -29,7 +29,8 @@ var ChildComponent = (function () {
     ChildComponent = __decorate([
         core_1.Component({
             selector: 'child-component',
-            template: "\n\t\t\t\t\t<div>\n\t\t\t\t\t\t<h2>Child Component</h2>\n\t\t\t\t\t\t<label>Old Value:</label> {{oldVal}} |\n\t\t\t\t\t\t<label>New Value:</label> {{currVal}}\n\t\t\t\t\t</div>\n\t\t\t\t"
+            template: "\n\t\t<h2>Child Component</h2>\n\t\t<label>Old Value:</label> {{oldVal}} |\n\t\t<label>New Value:</label> {{currVal}}\n\t",
+            styles: ["\n\t\tlabel{ color:red;}\n\t"]
         }), 
         __metadata('design:paramtypes', [])
     ], ChildComponent);

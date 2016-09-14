@@ -25,7 +25,7 @@ var Wikipedia = (function () {
     Wikipedia = __decorate([
         core_1.Component({
             selector: 'wikipedia',
-            template: "\n\t\t<h2>Wikipedia Search</h2>\n\t\t<input #input type=\"text\" (keyup)=\"Search(input.value)\" />\n\t\t<ul>\n\t\t\t<li *ngFor=\"let item of items\">{{item}}</li>\n\t\t</ul>\n\t"
+            template: "\n\t\t<h2>Wikipedia Search using RxJS</h2>\n\t\t<input #input type=\"text\" (keyup)=\"Search(input.value)\" />\n\t\t<ul>\n\t\t\t<li *ngFor=\"let item of items\">{{item}}</li>\n\t\t</ul>\n\t"
         }), 
         __metadata('design:paramtypes', [rxjs_service_1.WikipediaService])
     ], Wikipedia);

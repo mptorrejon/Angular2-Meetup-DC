@@ -1,27 +1,29 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-app',
-  template: `
-  				<h3>My First Angular <span class="version">{{version}}</span> App</h3>
-  				<my-app2>Loading...</my-app2>
+	selector: 'my-app'
+	,template: `
+		<h3>My First Angular <span class="version">{{version}}</span> App</h3>
 
-  				<button (click)="hasChild = !hasChild">{{hasChild ? 'Destroy' : 'Create'}} MyComponent</button>
-    			
-  				<life-cycle *ngIf="hasChild"></life-cycle>
+		<!--UNCOMMENT AS NEEDED-->		
+		
+		<!--<left-component which="left"></left-component> | -->
+		<!-- <right-component which="right"></right-component> -->
 
-  				<wikipedia></wikipedia>
+		<!-- <button (click)="hasChild = !hasChild">{{hasChild ? 'Destroy' : 'Create'}} MyComponent</button> -->
+	
+		<!-- <life-cycle *ngIf="hasChild"></life-cycle> -->
 
-  				<router-outlet></router-outlet>
-  			`,
-  styles:[`
-  	.version{ color:red; }
-  `]
+		<!-- <wikipedia></wikipedia> -->
+	`
+	,styles:[`
+		button{display:block; margin: 10px 0px; padding: 10px 5px;}
+	`]
 })
-export class AppComponent1  {
+export class AppComponent  {
 	version:number = 0;
 	
 	constructor(){
-		this.version = 3;
+		this.version = 2;
 	}
 }
